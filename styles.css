@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  background: url("bg1.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+#board{
+  background: linear-gradient( #150E56, #A5C9CA);
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+.head{
+  background: #FFD56F;
+  border: 3px solid #FFB100;
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+.snake{
+  background-color: #CDE990;
+  border: 0.25vmin #AACB73 solid;
+  border-radius: 12px;
+}
+.food{
+  background: #CD5888;
+  border: 0.25vmin #20262E solid;
+  border-radius: 8px;
+}
+#score{
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'Bruno Ace SC';
+}
+#hiscore{
+  position: absolute;
+  top: 90px;
+  right: 110px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'Bruno Ace SC';
+
+}
